@@ -194,4 +194,8 @@ Based on the patterns identified, the analysis suggests several areas organisati
 
 **1. Strengthen employee onboarding**
 
-The high first-year attrition rate highlights the importance of effective onboarding, realistic job expectations, early engagement and regular check
+The high first-year attrition rate highlights the importance of effective onboarding, realistic job expectations, early engagement and regular check.
+
+## Tableau Dashboard
+
+[IBM HR Analytics Dashboard](Tableau/IBM_HR_Analytics_Dashboard.png)
