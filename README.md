@@ -1,201 +1,90 @@
+# IBM HR Analytics: Employee Attrition & Retention
 
-# IBM HR Analytics – Employee Attrition & Retention Analysis
+An end-to-end HR analytics portfolio project exploring employee attrition, retention patterns and workforce indicators using **Python, SQL (MySQL) and Tableau**.
 
-## Project Overview
+> **Purpose:** Demonstrate how HR data can be prepared, analysed and translated into practical workforce questions. This is a simulated practice dataset, not verified employee data from IBM.
 
-This project investigates employee attrition and retention patterns using an HR analytics dataset. The aim is to identify workforce trends, explore factors associated with employees leaving an organisation, and demonstrate how data analytics can support evidence-based HR decision-making.
+## Project at a glance
 
-I completed this project as part of my development in data analytics, combining my interest in HR and workforce management with practical experience using Python, SQL and Tableau.
-
-**Dataset:** IBM HR Analytics Employee Attrition & Performance (Kaggle practice dataset)  
-**Records analysed:** 1,470 employees  
-**Tools:** Python, Pandas, Jupyter Notebook, MySQL, SQL and Tableau Public
-
-> **Data note:** This is a simulated practice dataset commonly referred to as the IBM HR Analytics dataset. It does not represent verified real IBM employee records.
-
----
-
-## Project Objectives
-
-The analysis focused on answering the following questions:
-
-- What proportion of employees leave the organisation?
-- Which departments and job roles have the highest attrition rates?
-- Is overtime associated with higher employee attrition?
-- Does employee age influence attrition patterns?
-- At what stage of employment are employees most likely to leave?
-- Are there differences in average monthly income and job satisfaction between employees who stay and those who leave?
-
----
-
-## Tools & Technologies
-
-| Tool | How it was used |
+| | |
 |---|---|
-| Python | Data cleaning and exploratory analysis |
-| Pandas | Data manipulation and analysis |
-| Jupyter Notebook | Running and documenting Python analysis |
-| MySQL | Storing and querying the dataset |
-| SQL | Investigating attrition trends and calculating metrics |
-| Tableau Public | Building interactive visualisations and a dashboard |
-| GitHub | Documenting and presenting the project |
+| Dataset | IBM HR Analytics Employee Attrition & Performance (practice dataset) |
+| Records | 1,470 employees |
+| Original fields | 35 |
+| Analysis tools | Python, Pandas, Jupyter Notebook, MySQL |
+| Visualisation | Tableau workbook |
+| Focus | Attrition, retention, overtime, tenure, department and job role |
 
----
+## Business questions
 
-## Project Workflow
+- What is the overall employee attrition rate?
+- Which departments and job roles show the highest attrition?
+- How does attrition vary by age and length of service?
+- Is overtime associated with higher attrition in this dataset?
+- How do average monthly income and job satisfaction differ between employees who stay and leave?
+- What could HR teams investigate in response to these patterns?
 
-### 1. Data Cleaning – Python
+## Workflow and methods
 
-Used Python and Pandas to inspect and prepare the dataset.
+1. **Data preparation – Python / Pandas**
+   - Loaded and inspected the source data.
+   - Reviewed data types, missing values and duplicate records.
+   - Prepared a clean dataset for analysis and exported it for downstream use.
+2. **Exploratory analysis – MySQL**
+   - Imported the cleaned employee data.
+   - Used SQL aggregations and grouped comparisons to examine attrition by department, overtime, salary, satisfaction, tenure, age and job role.
+3. **Visual communication – Tableau**
+   - Developed a dashboard concept to bring the key workforce measures together.
+   - The Tableau workbook is included in the repository; a polished dashboard screenshot still needs to be added.
 
-Tasks included:
-- Loading the CSV dataset into Pandas.
-- Reviewing dataset structure and column types.
-- Checking for missing values.
-- Checking for duplicate records.
-- Preparing a cleaned dataset for further analysis.
-- Exporting the cleaned CSV file for use in MySQL and Tableau.
+## Selected findings
 
-**Data quality checks:**
-- 1,470 employee records.
-- 35 original columns.
-- No missing values identified.
-- No duplicate records identified.
-
-### 2. Data Analysis – MySQL
-
-Imported the cleaned dataset into MySQL and created a database called `ibm_hr_analytics`.
-
-Created SQL queries to investigate:
-
-1. Overall employee attrition.
-2. Department attrition.
-3. Overtime and attrition.
-4. Salary and attrition.
-5. Job satisfaction.
-6. Length of service.
-7. Age groups.
-8. Job roles.
-9. Final attrition summary.
-
-### 3. Data Visualisation – Tableau
-
-Created a Tableau dashboard to present the main findings through visual analysis.
-
-The dashboard explores:
-- Overall employee attrition.
-- Department-level attrition.
-- Overtime and attrition.
-- Attrition by age group.
-- Attrition by length of service.
-- Attrition by job role.
-- Average monthly income by attrition status.
-
----
-
-## Key Findings
-
-### Overall Attrition
-
-| Metric | Result |
+| Measure | Finding |
 |---|---:|
-| Total employees | 1,470 |
 | Employees who left | 237 |
 | Employees who stayed | 1,233 |
 | Overall attrition rate | 16.12% |
-| Average length of service | 7.01 years |
+| Sales department attrition | 20.63% |
+| Human Resources department attrition | 19.05% |
+| Research & Development attrition | 13.84% |
+| Attrition among employees with 0–1 years' service | 34.88% |
+| Attrition among employees under 25 | 39.18% |
+| Attrition among Sales Representatives | 39.76% |
 
-### Department Attrition
+In this dataset, the attrition rate was **30.53%** for employees recorded as working overtime, compared with **10.44%** for those not recorded as working overtime. Employees who left also had lower average monthly income and slightly lower average job satisfaction scores.
 
-| Department | Attrition Rate |
-|---|---:|
-| Sales | 20.63% |
-| Human Resources | 19.05% |
-| Research & Development | 13.84% |
+These are descriptive associations within a simulated dataset. They do not establish that any single factor caused an employee to leave.
 
-Sales had the highest attrition rate of the three departments.
+## HR interpretation and questions for further investigation
 
-### Overtime and Attrition
+- **Early-tenure retention:** Explore onboarding, role expectations, manager check-ins and early employee experience.
+- **Workload and overtime:** Review workload distribution and whether sustained overtime is associated with retention risks.
+- **Role-level differences:** Investigate why some job families have higher attrition rather than applying one organisation-wide intervention.
+- **Reward and experience:** Examine pay and job satisfaction alongside other factors before drawing conclusions.
 
-| Overtime | Attrition Rate |
-|---|---:|
-| Overtime | 30.53% |
-| No overtime | 10.44% |
+## Repository contents
 
-Employees recorded as working overtime had an attrition rate almost three times that of employees who did not.
+| Path | Contents |
+|---|---|
+| `Python/IBM_HR_Analytics.ipynb` | Python analysis notebook |
+| `Python/IBM_HR_Analytics_Clean.csv` | Prepared analysis dataset |
+| `SQL/` | Nine SQL scripts covering the main attrition questions |
+| `IBM_HR_Analytics.png.twb` | Tableau workbook file (Tableau workbook format) |
 
-This suggests overtime may be an important area for further workforce investigation.
+- [Open the Python notebook](Python/IBM_HR_Analytics.ipynb)
+- [Browse the SQL analysis](SQL/)
+- [Open the Tableau workbook file](IBM_HR_Analytics.png.twb)
 
-### Attrition by Length of Service
+## Limitations
 
-| Length of Service | Attrition Rate |
-|---|---:|
-| 0–1 years | 34.88% |
-| 2–3 years | 18.43% |
-| 4–5 years | 13.07% |
-| 6–10 years | 12.28% |
-| 10+ years | 8.13% |
+- The dataset is a simulated, cross-sectional practice dataset.
+- The analysis describes associations; it cannot establish causation.
+- Results should not be generalised to IBM or any real employer.
+- The Tableau workbook is present, but a dashboard preview image and a verified public interactive dashboard link are not currently included.
 
-The highest attrition occurred during the first year of employment.
+## What this project demonstrates
 
-This highlights the importance of recruitment quality, onboarding, employee expectations and early engagement.
-
-### Attrition by Age
-
-| Age Group | Attrition Rate |
-|---|---:|
-| Under 25 | 39.18% |
-| 25–34 | 20.22% |
-| 35–44 | 10.10% |
-| 45–54 | 10.20% |
-| 55+ | 15.94% |
-
-Employees under 25 had the highest attrition rate across the age groups analysed.
-
-### Attrition by Job Role
-
-The highest attrition rates were identified in:
-
-| Job Role | Attrition Rate |
-|---|---:|
-| Sales Representative | 39.76% |
-| Laboratory Technician | 23.94% |
-| Human Resources | 23.08% |
-| Sales Executive | 17.48% |
-| Research Scientist | 16.10% |
-
-Sales Representatives had the highest attrition rate among the job roles analysed.
-
-### Salary and Attrition
-
-| Employee Status | Average Monthly Income |
-|---|---:|
-| Stayed | 6,832.74 |
-| Left | 4,787.09 |
-
-Employees who left had a lower average monthly income than those who stayed.
-
-The dataset does not specify a currency, so these figures are presented in the dataset's original units.
-
-### Job Satisfaction
-
-| Employee Status | Average Job Satisfaction |
-|---|---:|
-| Stayed | 2.78 |
-| Left | 2.47 |
-
-Employees who left reported slightly lower average job satisfaction scores.
+**HR domain understanding · data cleaning · exploratory data analysis · Pandas · SQL querying · workforce metrics · dashboard development · communicating findings for HR decision-making**
 
 ---
-
-## Recommendations & Business Implications
-
-Based on the patterns identified, the analysis suggests several areas organisations could investigate further:
-
-**1. Strengthen employee onboarding**
-
-The high first-year attrition rate highlights the importance of effective onboarding, realistic job expectations, early engagement and regular check.
-
-## Tableau Dashboard
-
-[IBM HR Analytics Dashboard](Tableau/IBM_HR_Analytics_Dashboard.png)
+*Portfolio project by K96-max.*
