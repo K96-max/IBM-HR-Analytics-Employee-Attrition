@@ -69,11 +69,11 @@ These are descriptive associations within a simulated dataset. They do not estab
 | `Python/IBM_HR_Analytics.ipynb` | Python analysis notebook |
 | `Python/IBM_HR_Analytics_Clean.csv` | Prepared analysis dataset |
 | `SQL/` | Nine SQL scripts covering the main attrition questions |
-| `IBM_HR_Analytics_Dashboard.twb` | Tableau workbook file (Tableau workbook format) |
+| `Tableau/IBM_HR_Analytics_Dashboard.twb` | Tableau workbook file (Tableau workbook format) |
 
 - [Open the Python notebook](Python/IBM_HR_Analytics.ipynb)
 - [Browse the SQL analysis](SQL/)
-- [Open the Tableau workbook file](IBM_HR_Analytics.png.twb)
+- [Open the Tableau workbook file](Tableau/IBM_HR_Analytics_Dashboard.twb)
 
 ## Limitations
 
