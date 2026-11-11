@@ -86,5 +86,16 @@ These are descriptive associations within a simulated dataset. They do not estab
 
 **HR domain understanding · data cleaning · exploratory data analysis · Pandas · SQL querying · workforce metrics · dashboard development · communicating findings for HR decision-making**
 
+
+## Interview preparation
+
+**30-second walkthrough:** “I analysed a 1,470-record employee dataset to explore attrition and retention patterns. I cleaned the data with Pandas, queried the prepared data in MySQL and built a Tableau dashboard concept. I found that attrition varied by tenure, job role and overtime status, then translated those patterns into questions HR could investigate around onboarding, workload and retention.”
+
+**Connect it to the role:** This is the strongest project to discuss for People Analytics, HR Data Analyst and HRIS reporting roles. It shows how you can turn employee data into workforce measures and explain the implications to HR stakeholders.
+
+**Interview questions to practise:** How did you calculate attrition rate? Why did you segment by tenure and job role? What checks did you perform before analysis? What does correlation not tell you? What additional HR data would you request before recommending an intervention?
+
+**Be ready to demonstrate:** one Pandas cleaning step, one SQL aggregation, one dashboard view and the reasoning behind one finding. Do not describe associations as causes.
+
 ---
 *Portfolio project by K96-max.*
